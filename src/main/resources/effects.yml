@@ -1,0 +1,36 @@
+repair:
+  sounds:
+    hand: "BLOCK_ANVIL_USE"
+    all: "BLOCK_ANVIL_USE"
+heal:
+  sounds:
+    self: "BLOCK_ANVIL_USE"
+    other: "BLOCK_ANVIL_USE"
+feed:
+  sounds:
+    self: "BLOCK_ANVIL_USE"
+    other: "BLOCK_ANVIL_USE"
+nv:
+  sounds:
+    enable: "BLOCK_ANVIL_USE"
+    disable: "BLOCK_ANVIL_USE"
+    expired: "BLOCK_ANVIL_USE"
+god:
+  sounds:
+    enable: "BLOCK_ANVIL_USE"
+    disable: "BLOCK_ANVIL_USE"
+    expired: "BLOCK_ANVIL_USE"
+ec:
+  sounds:
+    self: "BLOCK_ANVIL_USE"
+    other: "BLOCK_ANVIL_USE"
+whitelist:
+  sounds:
+    add: "BLOCK_ANVIL_USE"
+    remove: "BLOCK_ANVIL_USE"
+    on: "BLOCK_ANVIL_USE"
+    off: "BLOCK_ANVIL_USE"
+admin:
+  sounds:
+    enable: "BLOCK_ANVIL_USE"
+    disable: "BLOCK_ANVIL_USE"

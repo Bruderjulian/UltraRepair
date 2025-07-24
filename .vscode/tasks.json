@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build JAR",
+      "type": "shell",
+      "command": "gradle build",
+      "group": "build"
+    },
+    {
+      "label": "Copy JAR to Plugins",
+      "type": "shell",
+      "dependsOn": "Build JAR",
+      "command": "copy build/libs/customtools-*.jar D:/Spiele/Minecraft/serverPurpur/plugins",
+      "problemMatcher": []
+    },
+    {
+      "label": "Start Spigot Server",
+      "type": "shell",
+      "dependsOn": "Copy JAR to Plugins",
+      "command": "cd D:/Spiele/Minecraft/serverPurpur/ && java -Xmx3G -Xms1G -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -jar purpur-1.21.5.jar nogui",
+      "problemMatcher": []
+    },
+    {
+      "label": "Test Plugin",
+      "dependsOn": ["Build JAR", "Copy JAR to Plugins", "Start Spigot Server"],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    }
+  ]
+}

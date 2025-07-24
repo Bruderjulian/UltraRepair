@@ -1,0 +1,153 @@
+# -----------------------------------------------------------------------------
+#  ____ _____________
+# |    |   \______   \
+# |    |   /|       _/
+# |    |  / |    |   \
+# |______/  |____|_  /
+#                  \/
+# |
+# MESSAGES.YML - Locale settings for the plugin.
+# Support: https://demeng.dev/discord
+# -----------------------------------------------------------------------------
+
+config-version: 4
+
+# The prefix displayed in front of every message.
+prefix: "&8[&9CustomTools&8] &7"
+
+# General command-related messages.
+commands.invalid-subcommand: "&4Invalid subcommand: &7{0}"
+commands.no-permission: "&4You do not have permission to execute this command."
+commands.error-occurred: "&4An error occurred while executing this command."
+commands.wrong-arguments: "&4Invalid arguments! &7You must provided %n% Arguments"
+commands.must-be-player: "&4You must be a player to use this command!"
+commands.invalid-command: "&4invalid Command! Use '/admin help' for Help"
+
+# Cant find the player.
+player-not-found: "&7Player &b%player% &7not found."
+
+# When config files are successfully reloaded.
+reloaded: "&7Config files have been reloaded."
+
+# If the item cannot be repaired (is a block, has full durability, etc.).
+invalid-item: "&7You cannot repair this item."
+
+# If there are no items to repair in the player's inventory.
+invalid-items: "&7There are no items to repair in your inventory."
+
+# If the player's repair cooldown is still active.
+on-cooldown: "&7You must wait &b%time% &7before using it again."
+
+# If the player does not have enough money to repair.
+insufficient-funds: "&7You need &b$%cost% &7to use this command."
+
+# When the player's hand has been successfully repaired.
+repaired-hand: "&7The item in your hand has been repaired."
+# When the player's inventory has been successfully repaired.
+repaired-all: "&7Your inventory has been repaired."
+# Status of the repair cooldown. and the current item durability.
+repair-status: "&7You have &b%durability% &7durability left. Cooldown: &b%time%"
+
+# Has been healed.
+healed: "&7You have been healed."
+# Has been healed by another player.
+healed-byOther: "&7You have been healed by &b%player%."
+# Has healed an another player.
+healed-other: "&7You have healed by &b%player%."
+# Status of a players health.
+heal-status: "&7You have &b%health% &7hearts left. Cooldown: &b%time%"
+# player has full health.
+full-health: "&7You have full health."
+
+# Has been feeded.
+feeded: "&7You have been feeded."
+# Has been feeded by another player.
+feeded-other: "&7You have been feeded by &b%player%."
+# Status of a players health.
+feed-status: "&7You have &b%hunger% &7Hunger left. Cooldown: &b%time%"
+# player has full hunger.
+full-hunger: "&7You have full hunger."
+
+# You have enabled the night vision effect.
+nv-enabled: "&7Night vision has been enabled."
+# You have disabled the night vision effect.
+nv-disabled: "&7Night vision has been disabled."
+# The night vision effect has expired.
+nv-expired: "&7Night vision has expired."
+# Remaining time of the night vision effect.
+nv-status: "&7NV is &b%status%. &7You have &b%time% &7seconds of night vision left."
+# The player has drunk milk.
+nv-milk: "You drank milk - night vision will be applied!"
+# The night vision effect has been enabled for another player.
+nv-enabled-other: "&7Night vision has been enabled for &b%player%."
+# The night vision effect has been disabled for another player.
+nv-disabled-other: "&7Night vision has been disabled for &b%player%."
+# The night vision effect has been enabled by another player.
+nv-enabled-ByOther: "&7Night vision has been enabled by &b%player%."
+# The night vision effect has been disabled by another player.
+nv-disabled-ByOther: "&7Night vision has been disabled by &b%player%."
+
+# You have enabled the godmode.
+god-enabled: "&7Godmode has been enabled."
+# You have disabled the godmode .
+god-disabled: "&7Godmode has been disabled."
+# The godmode has expired.
+god-expired: "&7Godmode has expired."
+# Remaining time of the godmode.
+god-status: "&7NV is &b%status%. &7You have &b%time% &7seconds of godmode left."
+# The godmode has been enabled for another player.
+god-enabled-other: "&7Godmode has been enabled for &b%player%."
+# The godmode has been disabled for another player.
+god-disabled-other: "&7Godmode has been disabled for &b%player%."
+# The godmode has been enabled by another player.
+god-enabled-ByOther: "&7Godmode has been enabled by &b%player%."
+# The godmode has been disabled by another player.
+god-disabled-ByOther: "&7Godmode has been disabled by &b%player%."
+
+# Ender chest has been opened.
+ec-opened: "&7Ender chest has been opened."
+# Ender chest has been closed.
+# ec-closed: "&7Ender chest has been closed."
+# Ender chest status
+ec-status: "&7Ender chest has &b%items% items. Items left: &b%left%"
+
+admin-disabled: "&7The admin mode is disabled."
+admin-enabled: "&7The admin mode is enabled."
+admin-status:
+  - "&4Server Status:"
+  - "&7Online/Max Players: &b%online-players%/%max-players%"
+  - "&7Ops: &b%ops-players%"
+  - "&7Banned %banned-players%"
+  - "&7Whitelist: &b%whitelistStatus%"
+  - "&7Worlds: &b%worlds%"
+  - "&7Name: &b%name%"
+  - "&7Address: &b%ip%:%port%"
+  - "&7Version: %version%"
+  - "&7Ping: &b%ping%ms"
+  - "&7Uptime: &b%uptime%"
+  - "&7RAM Usage: &b%ram-current%mb / &b%ram-total%mb"
+admin-specs:
+  - "&4Server Specs:"
+  - "&7Name: &b%name%"
+  - "&7Address: &b%ip%:%port%"
+  - "&7Version: &b%version%"
+  - "&7Plugins (%plugins-count%): &b%plugins%"
+  - "&7RAM: &b%ram%"
+  - "&7DiskSpace: &b%disk%"
+  - "&7OS: &b%os%"
+  - "&7Java Version: &b%javaVersion%"
+  - "&7VM: &b%vm%"
+  - "&7Encoding: &b%enc%"
+
+admin-kicked: "&7%player% has been kicked"
+admin-banned: "&7%player% has been banned"
+admin-unbanned: "&7%player% has been unbanned"
+admin-banned-other: "&7You have been banned by %player%"
+admin-unbanned-other: "&7You have been unbanned by %player%"
+admin-muted: "&7%player% has been muted"
+admin-unmuted: "&7%player% has been unmuted"
+admin-muted-other: "&7You have been muted by %player%"
+admin-unmuted-other: "&7You have been unmuted by %player%"
+
+admin-coins-total: "&7The total amount of coins in the economy is &b%total%"
+admin-cannot-be-toggled: "&7You cannot toggle the admin mode."

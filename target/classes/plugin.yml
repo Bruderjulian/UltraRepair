@@ -1,0 +1,146 @@
+name: CustomTools
+version: 1.0.0
+main: dev.julizey.customtools.CustomTools
+api-version: 1.21
+softdepend: [Vault]
+author: Julizey
+description: A plugin for useful commands such as repair, heal, feed, nightvisio, and godmode for players.
+
+commands:
+  repair:
+    usage: /<command>
+    description: repairs an item in your hand
+  heal:
+    usage: /<command>
+    description: heals you to full health
+  feed:
+    usage: /<command>
+    description: fills your hunger bar to full
+  god:
+    usage: /<command>
+    description: gives you god mode (for a short time)
+  nv:
+    usage: /<command>
+    description: gives you night vision for a short time
+  ec:
+    usage: /<command>
+    description: opens the enderchest
+  admin:
+    usage: /<command> <subcommand>
+    description: useful commands for admins
+
+permissions:
+  customtools.*:
+    description: Gives access to all Inferno commands
+    default: op
+    children:
+      customtools.reload: true
+      customtools.repair: true
+      customtools.heal: true
+      customtools.feed: true
+      customtools.god: true
+      customtools.nightvision: true
+  customtools.reload:
+    description: Allows you to reload the configs of the plugin
+    default: op
+
+  customtools.repair:
+    description: Repairs items in your hand or inventory
+    default: true
+    children:
+      customtools.repair.status: true
+      customtools.repair.hand: true
+      customtools.repair.all: true
+  customtools.repair.status:
+    description: Gets the status of your repair
+    default: true
+  customtools.repair.hand:
+    description: Repairs the item in your hand
+    default: true
+  customtools.repair.all:
+    description: Repairs all items in your inventory
+    default: true
+
+  customtools.heal:
+    description: Heals you to full health
+    default: true
+    children:
+      customtools.heal.other: false
+      customtools.heal.status: true
+      customtools.heal.self: true
+  customtools.heal.self:
+    description: Heals yourself to full health
+    default: true
+  customtools.heal.status:
+    description: Gets the status of your health
+    default: true
+  customtools.heal.other:
+    description: Heals another player to full health
+    default: true
+
+  customtools.feed:
+    description: Feeds you to full hunger
+    default: true
+    children:
+      customtools.feed.other: false
+  customtools.feed.other:
+    description: Feeds another player to full hunger
+    default: true
+
+  customtools.nv:
+    description: Allows to enable/disable night vision for yourself
+    default: true
+    children:
+      customtools.nv.other: false
+      customtools.nv.status: true
+      customtools.nv.self: true
+  customtools.nv.self:
+    description: enable/disable night vision for yourself
+    default: true
+  customtools.nv.status:
+    description: Gets the status of your night vision
+    default: true
+  customtools.nv.other:
+    description: enable/disable night vision for another player
+    default: true
+
+  customtools.god:
+    description: Allows to enable/disable invincibility for yourself
+    default: true
+    children:
+      customtools.god.other: false
+      customtools.god.status: true
+      customtools.god.self: true
+  customtools.god.self:
+    description: enable/disable invincibility for yourself
+    default: true
+  customtools.god.status:
+    description: Gets the status of your invincibility
+    default: true
+  customtools.god.other:
+    description: enable/disable invincibility for another player
+    default: true
+
+  customtools.ec:
+    description: Opens the Ender Chest
+    default: true
+    children:
+      customtools.ec.other: false
+      customtools.ec.status: true
+      customtools.ec.self: true
+  customtools.ec.self:
+    description: opens the Ender Chest for yourself
+    default: true
+  customtools.ec.status:
+    description: gets the status of your Ender Chest
+    default: true
+  customtools.ec.other:
+    description: opens the Ender Chest for another player
+    default: true
+
+  customtools.admin:
+    description: Allows to use admin commands
+    default: op
+  customtools.helper:
+    description: Allows to use helper commands
+    default: op

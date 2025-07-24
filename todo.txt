@@ -1,0 +1,6 @@
+- No Clip
+- Enchant/Unenchant
+- maybe time/weather
+- speed
+- unbreakable
+- ping
